@@ -12,5 +12,6 @@ jobs:
         architecture: x64
     - name: Create environment
       run: make venv
+    - run: make dev
     - name: Run tests
       run: make test
