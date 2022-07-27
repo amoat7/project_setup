@@ -30,7 +30,7 @@ clean: style
 # Test
 .PHONY: test
 test:
-	python3 -m pytest --cov app --cov-report html
+	python3 -m pytest --cov app --cov-report html:coverage/html --cov-report xml:coverage/coverage.xml
 
 
 .PHONY: help
